@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>World</title>
+  </head>
+
+  <body onload="main()">
+    <table>
+      <tr><td>Meghana Bellam</td></tr>
+      <tr><td>mbellam@ucsc.edu</td></tr>
+      <tr><td>Notes to Grader: </td></tr>
+      <tr><td>
+        <ul>
+          <li>Implemented a MAZE Game with a dog park. We have a dog park on the left and a maze game on the right.</li>
+          <li>Each dog is rendered at the point in the 2D matrix where there is a number 5.</li>
+          <li>Camera movement with keyboard and mouse. </li>
+          <li>Each 4th level block in the wall is a TreeRoot Magic Block with a different texture.</li>
+        </ul></td></tr>
+      <tr><td><button type="button" id="BeginMaze">Begin Maze</button> W-Forward, A-Left, S-Backward, D-Right, Q-Turn Left, E-Turn Right</td></tr>
+      <tr><td><button type="button" id="ViewMaze">View from Above</button></td></tr>
+  </table>
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> XXX </p>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Picture.js"></script>
+    <script src="Picture1.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
